@@ -70,14 +70,15 @@ nav .s1 .right .kart{
 nav .s1 .right{
     display: flex;
     width: 10%;
-    justify-content: space-around;
+    
+    justify-content: space-between\;
 }
-.right{
+nav .s1 .right{
     position: relative;
 }
 nav .s1 .right .cart .qty{
     position: absolute;
-    left: 55%;
+    left: 25%;
     top: -8px;
     display: inline-block;
     height: 20px;
