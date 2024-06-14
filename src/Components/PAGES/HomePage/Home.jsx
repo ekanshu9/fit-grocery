@@ -3,6 +3,9 @@ import Navbar from '../../Navbar/Navbar'
 import BannerSlider from '../../Banner/BannerSlider'
 import HomeCategories from '../../category/HomeCategories'
 import Product_Sidebar from '../../product/Product_Sidebar'
+import Footer1 from '../../Footer/Footer1'
+import Footer2 from '../../Footer/Footer2'
+
 
 
 
@@ -13,6 +16,8 @@ export const Home = () => {
      <BannerSlider/>
      <HomeCategories/>
      <Product_Sidebar/>
+     <Footer1/>
+     <Footer2/>
     </div>
   )
 }

@@ -9,15 +9,19 @@ const ProductCard = ({data}) => {
             <img src={data.productimg} alt="product" />
         </div>
         <div className="s2">
-            <h1>${data.productprice-(data.productprice/100*data.discountpercent)}<span>${data.productprice}</span></h1>
+            <h1><span>&#8377;</span>{data.productprice-(data.productprice/100*data.discountpercent)}<p>M.R.P:<span><span>&#8377;</span>{data.productprice}</span></p></h1>
         </div>
         <div className="s3">
             <p>{data.counttype}</p>
+        </div>
+        <div className="s4">
+            <p>{'('}{data.discountpercent}% off{')'}</p>
         </div>
         <div className="btn">
             <SlEye className='icon'/>
             <IoIosAdd className='icon'/>
         </div>
+        
     </div>
   )
 }

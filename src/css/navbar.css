@@ -75,10 +75,11 @@ nav .s1 .right{
 }
 nav .s1 .right{
     position: relative;
+    width: 100px;
 }
 nav .s1 .right .cart .qty{
     position: absolute;
-    left: 25%;
+    left: 22%;
     top: -8px;
     display: inline-block;
     height: 20px;
