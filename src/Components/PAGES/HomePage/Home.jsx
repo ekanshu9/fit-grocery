@@ -19,7 +19,7 @@ export const Home = () => {
      <Product_Sidebar/>
      <Footer1/>
      <Footer2/>
-     <ProductReviews/>
+     
     </div>
   )
 }
