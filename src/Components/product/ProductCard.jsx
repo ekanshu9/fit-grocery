@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./ProductCard.css"
 import { IoIosAdd } from "react-icons/io";
 import { SlEye } from "react-icons/sl";
+import { Link } from 'react-router-dom';
 const ProductCard = ({data}) => {
+    const[show ,setShow]=useState(false);
+    const[qty,setQty]=useState(0)
+   
   return (
     <div className='product'>
         <div className="s1">
@@ -17,10 +21,25 @@ const ProductCard = ({data}) => {
         <div className="s4">
             <p>{'('}{data.discountpercent}% off{')'}</p>
         </div>
-        <div className="btn">
-            <SlEye className='icon'/>
-            <IoIosAdd className='icon'/>
+        {
+            show?
+            <div className='btn'>
+                <div className="qty">
+                    <button
+                    onClick={()=>{
+                        if(qty>0)setQty(qty-1)
+                    }}>-</button>
+                    {qty}
+                    <button onClick={()=>setQty(qty+1)}>+</button>
+                </div>
+                <button onClick={()=>setShow(!show)} className='addtocart'>Add to cart</button>
+            </div>:
+            <div className="btn">
+            <Link to={`/product/${data.id}`} style={{color:"black"}}><SlEye className='icon' /></Link>
+            <IoIosAdd className='icon' onClick={()=>setShow(!show)}/>
         </div>
+        }
+        
         
     </div>
   )

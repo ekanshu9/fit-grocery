@@ -69,6 +69,8 @@ body{
     height: 6vh;
     align-items: center;
     border: 1px solid rgba(43, 43, 43, 0.568);
+    flex-direction: row;
+    
 }
 .footer2 .top .info5 .email input{
     border: none;

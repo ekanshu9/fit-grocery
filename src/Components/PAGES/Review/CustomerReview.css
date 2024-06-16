@@ -1,0 +1,57 @@
+.container{
+    width: 100%;
+    max-height: 110vh;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+.card{
+    width: 95%;
+    display: flex;
+    border: 1px solid gray;
+}
+.star{
+    color: rgba(128, 128, 128, 0.523);
+}
+.rate{
+    color: gold;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 1vw;
+    margin-top: 8vh;
+    
+}
+.top .right{
+    display: flex;
+    width: 250px;
+    justify-content: space-around;
+    
+    /* border: 2px solid red; */
+}
+.top .right .date{
+    background-color: var(--col1);
+    width: 100px;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    border-radius: 18px;
+    font-size: 18px;
+    color: white;
+}
+.card .top h4{
+    color: var(--col1);
+    font-size: 23px;
+}
+.card p{
+    margin: 4vh 1vw;
+}
+.container h3{
+    color: var(--col1);
+    margin: auto;
+    margin-top: 10vh;
+}

@@ -5,13 +5,17 @@ import { CiSearch } from "react-icons/ci";
 import { CiShoppingCart } from "react-icons/ci";
 import { CiUser } from "react-icons/ci";
 import Dropdown from 'react-bootstrap/Dropdown';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     const[quantity,setQuantity]=useState(0)
   return (
     <nav>
         <div className="s1">
-            <img src={logo} alt="logo" className='logo' />
+          <Link to="/">
+          <img src={logo} alt="logo" className='logo' />
+          </Link>
+            
             <div className="searchbar">
                 <input type="text" name="" id="" className='search' placeholder='search for product and category' />
                 <button>

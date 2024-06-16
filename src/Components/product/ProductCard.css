@@ -84,7 +84,7 @@ body{
     font-size: 20px;
     height: 10%;
     padding-top: 15px;
-    top: 72%;
+    top: 80%;
     right: 20%;
     background-color: red;
     border-radius: 3px;
@@ -97,3 +97,29 @@ body{
     border-radius: 5px;
     font-size: 15px;
 }
+.product .btn .qty{
+    display: flex;
+    /* border: 1px solid black; */
+    justify-content: space-between;
+    background-color: white;
+    height: 30px;
+    border-radius: 4px;
+}
+.product .btn .qty button{
+    width: 25px;
+    border: none;
+    background-color: var(--col1);
+    color: white;
+    border-radius: 4px;
+}
+.product .btn>button{
+    background-color: var(--col1);
+    border-radius: 4px;
+    border: none;
+    color:white;
+    padding: 5px;
+}
+
+
+
+

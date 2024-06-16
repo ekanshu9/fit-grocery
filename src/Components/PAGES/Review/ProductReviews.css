@@ -1,0 +1,66 @@
+.prdrw{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 3px solid red; */
+    flex-direction: row;
+    
+    
+}
+.form{
+    display: flex;
+    width:50% ;
+    justify-content: center;
+    
+    
+}
+.form form{
+    width: 100%;
+    display: flex;
+    flex-direction: column  ;
+    gap: 4vh;
+    margin: 18vh 0;
+    margin-left: 3vw;
+    
+    outline: none;
+    
+}
+.form .name,.email,.review,.rating{
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.form form input,textarea{
+    border: 1px solid var(--col1);
+    border-radius: 4px;
+}
+.form form input{
+    height: 5vh;   
+}
+.form form label{
+    color: var(--col1);
+    font-size: 17px;
+}
+.rating .star{
+    font-size: 40px;
+    
+    color: rgba(128, 128, 128, 0.523);
+}
+.rating .star .rate{
+    color: gold;
+}
+.button button{
+    width: 11vw;
+    height: 6vh;
+    border: none;
+    outline: none;
+    background-color: var(--col1);
+    color: white;
+    font-size: 20px;
+    margin-top: 6vh;
+}
+.cards{
+    width: 50%;
+    /* border: 3px solid black; */
+}
