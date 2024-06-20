@@ -8,7 +8,10 @@ import Navbar from '../Navbar/Navbar'
 import { Link } from 'react-router-dom'
 import { IoIosArrowBack } from "react-icons/io";
 import ProductReviews from '../PAGES/Review/ProductReviews'
-<IoIosArrowBack />
+import Footer1 from '../Footer/Footer1'
+import Footer2 from '../Footer/Footer2'
+import ProductCrauser from './ProductCrauser'
+
 
 const ProductPage = () => {
     let[active,setActive]=useState(false)
@@ -122,6 +125,9 @@ const ProductPage = () => {
                  active?<ProductReviews/>:<div className='prodesc'>{productData && productData.productDescription}</div>
                }
         </div>
+        <ProductCrauser/>
+        <Footer1/>
+        <Footer2/>
     </div>
   )
 }

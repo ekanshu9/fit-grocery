@@ -25,8 +25,18 @@ const Navbar = () => {
             <div className="right">
                 <div className="cart">
                     <span className='qty'>
-                        {quantity}</span><CiShoppingCart className='icon kart'/> </div>
-                        <CiUser  className='icon user'/>
+                        {quantity}</span><CiShoppingCart className=' kart'/> </div>
+                        
+                        <Dropdown className='drop'>
+            <Dropdown.Toggle variant="" id="dropdown-basic"  ><CiUser  /></Dropdown.Toggle>
+            <Dropdown.Menu>
+        <Dropdown.Item ><Link to="/login" style={{textDecoration:"none" ,color:"black"}}>Login</Link></Dropdown.Item>
+        <Dropdown.Item ><Link to="/signup"  style={{textDecoration:"none" ,color:"black"}}>Signup</Link></Dropdown.Item>
+        <Dropdown.Item href="#/action-3">Profile</Dropdown.Item>
+        <Dropdown.Item >Logout</Dropdown.Item>
+
+      </Dropdown.Menu>
+        </Dropdown>
             </div>
         </div>
         <div className="s2">

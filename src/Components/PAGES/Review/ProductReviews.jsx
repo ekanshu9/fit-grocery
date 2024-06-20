@@ -96,7 +96,7 @@ const ProductReviews = () => {
   return (
     <div className='prdrw'>
         <div className="form">
-            <form >
+            <form className='form1'>
                 <div className="name">
                     <label htmlFor="">Name</label>
                     <input type="text" name="Name" id="" value={Name} onChange={handleChange}/>

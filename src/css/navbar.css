@@ -3,6 +3,7 @@ nav{
     flex-direction: column;
     padding: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.21);
+    
 }
 nav .icon:hover{
     color:var(--col1) ;
@@ -12,6 +13,7 @@ nav .s1{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 
 }
 nav img{
@@ -105,4 +107,7 @@ nav .s2 a{
  }
  nav .s2 a:hover{
     color: var(--col1);
+ }
+ nav .s1 .right .drop{
+    margin-left: 2.5vw ;
  }
